@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truvora - Product Reviews & Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/truvora-logo.svg" alt="Truvora" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="decorative-blob blob-1"></div>
+            <div class="decorative-blob blob-2"></div>
+            <div class="decorative-blob blob-3"></div>
+            <div class="hero-content">
+                <div class="hero-badges">
+                    <span class="hero-badge">
+                        <i class="fas fa-certificate"></i>
+                        Expert Reviews
+                    </span>
+                    <span class="hero-badge">
+                        <i class="fas fa-users"></i>
+                        100K+ Trusted Users
+                    </span>
+                </div>
+                <h1 class="hero-title">Discover the Best Products</h1>
+                <p class="hero-subtitle">Expert product reviews and recommendations to help you make smart purchasing decisions</p>
+                <div class="hero-search">
+                    <input type="text" id="search-input" placeholder="Search products, articles...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="product-showcase">
+                    <div class="product-item-hero">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=200&h=150&fit=crop" alt="Wireless Headphones" class="product-img">
+                        <div class="product-rating-hero">
+                            <div class="stars-hero">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-score">4.8</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-item-hero">
+                        <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=200&h=150&fit=crop" alt="Smart Watch" class="product-img">
+                        <div class="product-rating-hero">
+                            <div class="stars-hero">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-score">4.9</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-item-hero">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200&h=150&fit=crop" alt="Smartphones" class="product-img">
+                        <div class="product-rating-hero">
+                            <div class="stars-hero">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-score">4.7</span>
+                        </div>
+                    </div>
+                    
+                    <div class="review-stats">
+                        <div class="stat-item-hero">
+                            <div class="stat-number-hero">500+</div>
+                            <div class="stat-label-hero">Product Reviews</div>
+                        </div>
+                        <div class="stat-item-hero">
+                            <div class="stat-number-hero">100K+</div>
+                            <div class="stat-label-hero">Trusted Users</div>
+                        </div>
+                        <div class="stat-item-hero">
+                            <div class="stat-number-hero">98%</div>
+                            <div class="stat-label-hero">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest Articles</h2>
+                    <div class="category-filter">
+                        <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="tech">Technology</button>
+                        <button class="filter-btn" data-category="home">Home & Living</button>
+                        <button class="filter-btn" data-category="beauty">Beauty & Care</button>
+                        <button class="filter-btn" data-category="fitness">Fitness & Sports</button>
+                    </div>
+                </div>
+
+                <div class="blog-grid" id="blog-grid">
+                    <article class="blog-card" data-category="tech" onclick="location.href='article-detail.html'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=250&fit=crop" alt="Smartphone Review Comparison">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Technology</span>
+                            <h3>Best Smartphones of 2025</h3>
+                            <p>In-depth review of the most popular smartphones on the market, comprehensive comparison from performance to camera...</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">2025-01-15</span>
+                                <span class="blog-read">5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="home" onclick="location.href='article-air-purifier.html'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop" alt="Home Air Purifier Products">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Home & Living</span>
+                            <h3>Air Purifier Buying Guide</h3>
+                            <p>How to choose the right air purifier for your home? We tested 10 popular products to help you decide...</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">2025-03-12</span>
+                                <span class="blog-read">8 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="beauty" onclick="location.href='article-skincare.html'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=250&fit=crop" alt="Sensitive Skin Skincare Products">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Beauty & Care</span>
+                            <h3>Sensitive Skin Skincare Recommendations</h3>
+                            <p>Great news for those with sensitive skin! These gentle and effective skincare products are worth trusting...</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">2025-02-10</span>
+                                <span class="blog-read">6 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="fitness" onclick="location.href='article-fitness.html'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=250&fit=crop" alt="Home Fitness Equipment Display">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Fitness & Sports</span>
+                            <h3>Home Gym Equipment Recommendations</h3>
+                            <p>Get a professional fitness experience at home! These equipment pieces turn your home into a private gym...</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">2025-04-05</span>
+                                <span class="blog-read">7 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="tech">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=250&fit=crop" alt="Multiple Smartwatch Comparison">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Technology</span>
+                            <h3>Comprehensive Smartwatch Comparison</h3>
+                            <p>In-depth comparison of Apple Watch, Huawei, and Xiaomi smartwatches - which one is worth buying?...</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">2025-05-20</span>
+                                <span class="blog-read">10 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="home">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=250&fit=crop" alt="Premium Coffee Machine Review">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Home & Living</span>
+                            <h3>Coffee Machine Buying Guide</h3>
+                            <p>From beginner to professional, best coffee machine recommendations for every budget, enjoy great coffee at home...</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">2025-06-08</span>
+                                <span class="blog-read">9 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination">
+                    <button class="pagination-btn" disabled>&laquo; Previous</button>
+                    <span class="pagination-numbers">
+                        <button class="pagination-number active">1</button>
+                        <button class="pagination-number">2</button>
+                        <button class="pagination-number">3</button>
+                    </span>
+                    <button class="pagination-btn">Next &raquo;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Product Recommendations</h2>
+                    <div class="brand-badge">
+                        <div class="badge-inner">
+                            <i class="fas fa-award"></i>
+                            <span>Truvora Certified</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card" onclick="location.href='product-review.html'">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=300&h=200&fit=crop" alt="Sony WH-1000XM5 Wireless Headphones">
+                        <div class="product-info">
+                            <h3>Sony WH-1000XM5 Wireless Headphones</h3>
+                            <p class="product-price">¥2,399</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=300&h=200&fit=crop" alt="Apple Watch Series 9">
+                        <div class="product-info">
+                            <h3>Apple Watch Series 9</h3>
+                            <p class="product-price">¥2,999</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=300&h=200&fit=crop" alt="Bose SoundLink Mini Speaker">
+                        <div class="product-info">
+                            <h3>Bose SoundLink Mini</h3>
+                            <p class="product-price">¥1,299</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Truvora</h3>
+                    <p>Professional product review and recommendation platform, helping you make the best purchasing decisions.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Home & Living</a></li>
+                        <li><a href="#">Beauty & Care</a></li>
+                        <li><a href="#">Fitness & Sports</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@truvora.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> New York, NY</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Truvora. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

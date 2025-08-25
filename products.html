@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Truvora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/truvora-logo.svg" alt="Truvora" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#blog" class="nav-link">Blog</a></li>
+                    <li><a href="products.html" class="nav-link active">Products</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="products-page">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Product Recommendations</h1>
+                <p>Carefully selected quality products, verified through professional testing</p>
+            </div>
+        </section>
+
+        <section class="products-filters">
+            <div class="container">
+                <div class="filter-controls">
+                    <div class="category-filters">
+                        <button class="filter-btn active" data-category="all">All Products</button>
+                        <button class="filter-btn" data-category="tech">Technology</button>
+                        <button class="filter-btn" data-category="home">Home & Living</button>
+                        <button class="filter-btn" data-category="beauty">Beauty & Care</button>
+                        <button class="filter-btn" data-category="fitness">Fitness & Sports</button>
+                        <button class="filter-btn" data-category="kitchen">Kitchen Appliances</button>
+                    </div>
+                    <div class="sort-controls">
+                        <select id="sort-select">
+                            <option value="rating">Sort by Rating</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="newest">Newest Recommendations</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-content">
+            <div class="container">
+                <div class="products-grid" id="products-grid">
+                    <div class="product-item" data-category="tech" data-rating="4.9" data-price="2999">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=400&h=300&fit=crop" alt="Apple Watch Series 9">
+                            <div class="product-badge">Editor's Choice</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Apple Watch Series 9</h3>
+                            <p class="product-description">The latest generation Apple smartwatch, featuring S9 chip, double-tap gesture support, and up to 18 hours of battery life.</p>
+                            <div class="product-features">
+                                <span class="feature">S9 Chip</span>
+                                <span class="feature">Double Tap</span>
+                                <span class="feature">18hr Battery</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">4.9 (1,234 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">¥2,999</span>
+                                <span class="original-price">¥3,299</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn-primary">View Details</a>
+                                <a href="#" class="btn-secondary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="tech" data-rating="4.8" data-price="2399">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=300&fit=crop" alt="Sony WH-1000XM5 Wireless Headphones">
+                            <div class="product-badge best-value">Best Value</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Sony WH-1000XM5 Wireless Headphones</h3>
+                            <p class="product-description">Sony's flagship noise-canceling headphones with V1 processor, delivering industry-leading noise cancellation and sound quality.</p>
+                            <div class="product-features">
+                                <span class="feature">Active NC</span>
+                                <span class="feature">30hr Battery</span>
+                                <span class="feature">Quick Charge</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">4.8 (892 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">¥2,399</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="product-review.html" class="btn-primary">View Details</a>
+                                <a href="#" class="btn-secondary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="home" data-rating="4.7" data-price="1599">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop" alt="Xiaomi Air Purifier Pro">
+                        </div>
+                        <div class="product-info">
+                            <h3>Xiaomi Air Purifier Pro</h3>
+                            <p class="product-description">High-efficiency HEPA filter with 360-degree purification, real-time air quality display, and smart Wi-Fi control.</p>
+                            <div class="product-features">
+                                <span class="feature">HEPA Filter</span>
+                                <span class="feature">Smart Control</span>
+                                <span class="feature">Quiet Mode</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">4.7 (1,567 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">¥1,599</span>
+                                <span class="original-price">¥1,799</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn-primary">View Details</a>
+                                <a href="#" class="btn-secondary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="beauty" data-rating="4.6" data-price="599">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=400&h=300&fit=crop" alt="Lancome Advanced Genifique Serum">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lancôme Advanced Génifique Serum 50ml</h3>
+                            <p class="product-description">Classic anti-aging serum with bioactive ingredients, effectively improves skin texture and enhances radiance.</p>
+                            <div class="product-features">
+                                <span class="feature">Anti-Aging</span>
+                                <span class="feature">Brightening</span>
+                                <span class="feature">Hydrating</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">4.6 (743 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">¥599</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn-primary">View Details</a>
+                                <a href="#" class="btn-secondary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="fitness" data-rating="4.5" data-price="799">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop" alt="Keep Smart Exercise Bike">
+                        </div>
+                        <div class="product-info">
+                            <h3>Keep Smart Exercise Bike C1</h3>
+                            <p class="product-description">Home quiet exercise bike with smart screen, offering rich online courses and comprehensive data tracking.</p>
+                            <div class="product-features">
+                                <span class="feature">Silent Design</span>
+                                <span class="feature">Online Classes</span>
+                                <span class="feature">Data Tracking</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">4.5 (456 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">¥799</span>
+                                <span class="original-price">¥999</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn-primary">View Details</a>
+                                <a href="#" class="btn-secondary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="kitchen" data-rating="4.8" data-price="1299">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" alt="DeLonghi Automatic Coffee Machine">
+                        </div>
+                        <div class="product-info">
+                            <h3>DeLonghi Automatic Coffee Machine</h3>
+                            <p class="product-description">Italian fully automatic coffee machine with one-touch brewing for espresso, cappuccino and more, built-in grinder included.</p>
+                            <div class="product-features">
+                                <span class="feature">Built-in Grinder</span>
+                                <span class="feature">One-Touch</span>
+                                <span class="feature">Multiple Options</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">4.8 (321 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">¥1,299</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn-primary">View Details</a>
+                                <a href="#" class="btn-secondary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="tech" data-rating="4.4" data-price="399">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop" alt="Xiaomi Bluetooth Speaker Pro">
+                        </div>
+                        <div class="product-info">
+                            <h3>Xiaomi Bluetooth Speaker Pro</h3>
+                            <p class="product-description">Portable Bluetooth speaker with 360-degree surround sound, waterproof design, and 12-hour extended battery life.</p>
+                            <div class="product-features">
+                                <span class="feature">360° Sound</span>
+                                <span class="feature">Waterproof</span>
+                                <span class="feature">12hr Battery</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-text">4.4 (678 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">¥399</span>
+                                <span class="original-price">¥499</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn-primary">View Details</a>
+                                <a href="#" class="btn-secondary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="home" data-rating="4.7" data-price="1899">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400&h=300&fit=crop" alt="Dyson Supersonic Hair Dryer">
+                        </div>
+                        <div class="product-info">
+                            <h3>Dyson Supersonic Hair Dryer</h3>
+                            <p class="product-description">Revolutionary hair dryer with intelligent heat control technology, fast drying while protecting hair health.</p>
+                            <div class="product-features">
+                                <span class="feature">Smart Heat Control</span>
+                                <span class="feature">Fast Drying</span>
+                                <span class="feature">Hair Protection</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">4.7 (234 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">¥1,899</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn-primary">View Details</a>
+                                <a href="#" class="btn-secondary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="pagination-btn" disabled>&laquo; Previous</button>
+                    <span class="pagination-numbers">
+                        <button class="pagination-number active">1</button>
+                        <button class="pagination-number">2</button>
+                        <button class="pagination-number">3</button>
+                        <button class="pagination-number">4</button>
+                    </span>
+                    <button class="pagination-btn">Next &raquo;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Truvora</h3>
+                    <p>Professional product review and recommendation platform, helping you make the best purchasing decisions.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Home & Living</a></li>
+                        <li><a href="#">Beauty & Care</a></li>
+                        <li><a href="#">Fitness & Sports</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@truvora.com</li>
+                        <li><i class="fas fa-phone"></i> +86 400-123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> New York, NY</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Truvora. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

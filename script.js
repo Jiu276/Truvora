@@ -430,17 +430,25 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add loading animation to images
+// Add loading animation to images (never leave them invisible if load hangs or URL 404s)
 document.querySelectorAll('img').forEach(img => {
+    if (img.dataset.fadeReveal === 'off') return;
+
+    const reveal = () => {
+        if (img.dataset.imgRevealed) return;
+        img.dataset.imgRevealed = '1';
+        img.style.transition = 'all 0.3s ease';
+        img.style.opacity = '1';
+        img.style.transform = 'scale(1)';
+    };
+
     if (!img.complete) {
         img.style.opacity = '0';
         img.style.transform = 'scale(0.8)';
-        
-        img.addEventListener('load', () => {
-            img.style.transition = 'all 0.3s ease';
-            img.style.opacity = '1';
-            img.style.transform = 'scale(1)';
-        });
+
+        img.addEventListener('load', reveal, { once: true });
+        img.addEventListener('error', reveal, { once: true });
+        setTimeout(reveal, 3500);
     }
 });
 
